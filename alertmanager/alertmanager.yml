@@ -1,0 +1,13 @@
+# alertmanager.yml
+
+global:
+  resolve_timeout: 5m
+
+route:
+  receiver: 'default-receiver'
+
+receivers:
+- name: 'default-receiver'
+  email_configs:
+  - to: 'aws.saumik@outlook.com'
+
